@@ -7,16 +7,16 @@ int main ()
  
 	while (n > 0)
 	{
-		// keep shifting each bit
+	
 		rev_bits = rev_bits << 1;
  
-		// if the bit is 1 then we XOR with 1
+		
 		if (n & 1 == 1)
 		{
 			rev_bits = rev_bits ^ 1;
 		}
  
-		// right shift n
+	
 		n = n >> 1;
 	}
  
